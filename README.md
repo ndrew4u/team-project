@@ -10,9 +10,9 @@
 
 # | Иванов А. А. | техлид        | 32      | Ivanov.h, Ivanov.cpp     |   1 - 2     |
 
-# | Корнаков Д.  | разработчик   | ..      | Kornakov.h, Kornakov.cpp |             |
+# | Корнаков Д.  | разработчик   | 59      | Kornakov.h, Kornakov.cpp |   3 - 4     |
 
-# | Фролов С.    | разработчик   | ..      | Frolov.h, Frolov.cpp     |             |
+# | Фролов С.    | разработчик   | 6       | Frolov.h, Frolov.cpp     |   5 - 7     |
 
 # \## Сборка и запуск
 
