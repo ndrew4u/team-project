@@ -13,7 +13,7 @@ double sqrtHeron(double x) {
         if (fabs(next - guess) < EPSILON) {
             return next;
         }
-        guess = next;
+        guess =  next;
     }
 }
 

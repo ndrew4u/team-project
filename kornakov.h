@@ -5,4 +5,4 @@
 double sqrtHeron(double x);
 double cubeRoot(double x);
 
-#endif // KORNAKOV_H
+#endif //  KORNAKOV_H
