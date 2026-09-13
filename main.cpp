@@ -1,7 +1,6 @@
 ﻿// Командный проект. Группа ПИ-53.
 // Команда: Иванов (в. 32, техлид), Корнаков (в. 59, разработчик), Фролов (в. 6, разработчик)
 #include<iostream>
-#include <windows.h>
 #include<locale.h>
 #include<windows.h>
 using namespace std;
@@ -13,7 +12,7 @@ using namespace std;
 int main()
 {
 	SetConsoleOutputCP(CP_UTF8);
-	SetConsoleCP(CP_UTF8);
+    	SetConsoleCP(CP_UTF8);
 	int choice;
 	double m;
 	double a;
@@ -36,7 +35,6 @@ int main()
 		cin >> choice;
 		switch (choice)
 		{ // === БЛОК ОБРАБОТКИ: каждый участник добавляет свои case ===
-		
 		case 1:
 			do
 			{
@@ -105,7 +103,7 @@ int main()
         			cout << "Высота = " << equilateralHeight(a) << "\n";
     		    	}
     		    	break;
-		}	
+		}
 		case 0:
 			cout << "Работа завершена!" << "\n";
 			break;
