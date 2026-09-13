@@ -1,15 +1,16 @@
 #include "kornakov.h"
 #include <cmath>
 
+static const double EPSILON = 0.000001;
+
 double sqrtHeron(double x) {
     if (x == 0) return 0;
 
     double guess = x / 2.0;
-    double epsilon = 0.000001;
 
     while (true) {
         double next = (guess + x / guess) / 2.0;
-        if (fabs(next - guess) < epsilon) {
+        if (fabs(next - guess) < EPSILON) {
             return next;
         }
         guess = next;
@@ -19,15 +20,16 @@ double sqrtHeron(double x) {
 double cubeRoot(double x) {
     if (x == 0) return 0;
 
-    double guess = x / 3.0;
-    double epsilon = 0.000001;
+    bool negative = (x < 0);
+    double absX = fabs(x);
+
+    double guess = absX / 3.0;
 
     while (true) {
-        double next = (2.0 * guess + x / (guess * guess)) / 3.0;
-        if (fabs(next - guess) < epsilon) {
-            return next;
+        double next = (2.0 * guess + absX / (guess * guess)) / 3.0;
+        if (fabs(next - guess) < EPSILON) {
+            return negative ? -next : next;
         }
         guess = next;
     }
-
 }
