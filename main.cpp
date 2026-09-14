@@ -54,7 +54,8 @@ int main()
 		    	cin >> a;
     		    	if (a <= 0) {
         			cout << "Ошибка: сторона должна быть положительной.\n";
-    		    	} else {
+    		    	} 
+					else {
         			cout << "Площадь = " << equilateralArea(a) << "\n";
     		    	}
     		    	break;
@@ -64,7 +65,8 @@ int main()
     		    	cin >> a;
     		    	if (a <= 0) {
         			cout << "Ошибка: сторона должна быть положительной.\n";
-    		    	} else {
+    		    	} 
+					else {
         			cout << "Периметр = " << equilateralPerimeter(a) << "\n";
     		    	}
     		    	break;
@@ -74,7 +76,8 @@ int main()
     		    	cin >> a;
     		    	if (a <= 0) {
         			cout << "Ошибка: сторона должна быть положительной.\n";
-    		    	} else {
+    		    	} 
+					else {
         			cout << "Высота = " << equilateralHeight(a) << "\n";
     		    	}
     		    	break;
