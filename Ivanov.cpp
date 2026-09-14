@@ -1,5 +1,5 @@
 ﻿#include "Ivanov.h"
-const double g = 9.81;
+static const double g = 9.81;
 double gravityForce(double m)
 {
 	return m * g;
